@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grey Pharmaceutical ltd</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"> 
+
+    
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo"></div>
+      <ul class="nav-links">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">e-Medicine Shop</a></li>
+        <li><a href="#">e-Doctor</a></li>
+        <li><a href="#">Contract</a></li>
+        <li><a href="#">About us</a></li>
+      </ul>
+      <div class="burger">&#9776;</div>
+      <div class="cross">&#10006</div>   
+    </nav>
+<div class="none"></div>
+
+    <div class="container">
+
+      <div class="self">
+        <div class="pic">
+          <img src="ashik.jpeg" alt="img">
+          <div class="name">
+            <h3>ariful</h3>
+            <h3>islam</h3>
+            <p>ceo & founder</p>
+          </div>
+        </div>
+        <p>Ariful Islam is the CEO and founder of Grey Pharmaceutical Ltd. He was born in Tangail , Bangladesh in 2001.
+        </p>
+      </div>
+
+
+      <div class="info">
+          <div class="title">
+            <h1>WELCOME To,</h1>
+            <h2>GREY Pharmaceutical Ltd.</h2>
+          </div>
+          <div class="button">
+            <a href="#" class="btn"> Log in</a>
+            <a href="#" class="btn">Create Account</a>
+          </div>
+        </div>
+    </div>
+
+
+    
+    <script type="text/javascript">
+      const burger = document.querySelector(".burger");
+const navLinks = document.querySelector(".nav-links");
+const cross = document.querySelector(".cross");
+
+let linkOpen = false;
+
+    burger.addEventListener("click", () => {
+
+        if(!linkOpen){
+        navLinks.classList.add("open");
+        burger.classList.add("none");
+        cross.classList.add("block");
+
+        linkOpen = true;
+        }
+
+    });
+
+
+    cross.addEventListener("click" , () => {
+        if(linkOpen=true){
+            navLinks.classList.remove("open");
+        burger.classList.remove("none");
+        cross.classList.remove("block");
+
+        linkOpen = false;
+        }
+});
+
+    </script>
+  </body>
+</html>
